@@ -1,0 +1,25 @@
+<joblist>
+  <job>
+    <defaultTab>output</defaultTab>
+    <description></description>
+    <executionEnabled>true</executionEnabled>
+    <id>05d38f25-a85a-467b-9d6a-e2de8b73c422</id>
+    <loglevel>INFO</loglevel>
+    <name>test1</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <plugins />
+    <schedule>
+      <month month='*' />
+      <time hour='05' minute='47' seconds='0' />
+      <weekday day='*' />
+      <year year='*' />
+    </schedule>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <exec>whoami</exec>
+      </command>
+    </sequence>
+    <uuid>05d38f25-a85a-467b-9d6a-e2de8b73c422</uuid>
+  </job>
+</joblist>
