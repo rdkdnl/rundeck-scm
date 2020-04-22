@@ -1,0 +1,35 @@
+<joblist>
+  <job>
+    <context>
+      <options preserveOrder='true'>
+        <option name='opt1' required='true' value='hello world' />
+      </options>
+    </context>
+    <defaultTab>output</defaultTab>
+    <description></description>
+    <executionEnabled>true</executionEnabled>
+    <id>245615d6-6c84-45aa-88c4-724e3ab5d237</id>
+    <loglevel>DEBUG</loglevel>
+    <name>TEST-1</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <plugins />
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <script><![CDATA[echo "TEST 1"
+whoami
+pwd
+ls -lha
+echo @job.id@
+echo @job.project@
+echo @globals.cmd@
+echo @node.name@
+echo @node.hostname@
+echo @node.username@
+echo @option.opt1@]]></script>
+        <scriptargs />
+      </command>
+    </sequence>
+    <uuid>245615d6-6c84-45aa-88c4-724e3ab5d237</uuid>
+  </job>
+</joblist>
