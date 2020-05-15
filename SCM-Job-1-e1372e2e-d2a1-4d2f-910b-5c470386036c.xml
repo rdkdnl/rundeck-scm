@@ -6,6 +6,7 @@
     <loglevel>INFO</loglevel>
     <name>SCM-Job-1</name>
     <nodeFilterEditable>false</nodeFilterEditable>
+    <plugins />
     <scheduleEnabled>true</scheduleEnabled>
     <sequence keepgoing='false' strategy='node-first'>
       <command>
