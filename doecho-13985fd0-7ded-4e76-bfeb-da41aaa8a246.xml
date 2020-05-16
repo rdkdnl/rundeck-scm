@@ -7,7 +7,6 @@
     <loglevel>INFO</loglevel>
     <name>doecho</name>
     <nodeFilterEditable>false</nodeFilterEditable>
-    <plugins />
     <schedule>
       <month month='*' />
       <time hour='08' minute='00' seconds='0' />

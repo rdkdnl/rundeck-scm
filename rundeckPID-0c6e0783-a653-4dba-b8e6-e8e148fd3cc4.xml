@@ -7,7 +7,6 @@
     <loglevel>INFO</loglevel>
     <name>rundeckPID</name>
     <nodeFilterEditable>false</nodeFilterEditable>
-    <plugins />
     <scheduleEnabled>true</scheduleEnabled>
     <sequence keepgoing='false' strategy='node-first'>
       <command>

@@ -12,7 +12,6 @@
     <loglevel>DEBUG</loglevel>
     <name>TEST-1</name>
     <nodeFilterEditable>false</nodeFilterEditable>
-    <plugins />
     <scheduleEnabled>true</scheduleEnabled>
     <sequence keepgoing='false' strategy='node-first'>
       <command>

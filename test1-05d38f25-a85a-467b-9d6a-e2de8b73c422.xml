@@ -7,7 +7,6 @@
     <loglevel>INFO</loglevel>
     <name>test1</name>
     <nodeFilterEditable>false</nodeFilterEditable>
-    <plugins />
     <schedule>
       <month month='*' />
       <time hour='05' minute='47' seconds='0' />
