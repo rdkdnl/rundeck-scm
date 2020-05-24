@@ -1,0 +1,42 @@
+<joblist>
+  <job>
+    <defaultTab>output</defaultTab>
+    <description></description>
+    <dispatch>
+      <excludePrecedence>true</excludePrecedence>
+      <keepgoing>true</keepgoing>
+      <rankOrder>ascending</rankOrder>
+      <successOnEmptyNodeFilter>false</successOnEmptyNodeFilter>
+      <threadcount>1</threadcount>
+    </dispatch>
+    <executionEnabled>true</executionEnabled>
+    <id>86adcc40-cf21-4904-be21-f7919d2c5a80</id>
+    <loglevel>DEBUG</loglevel>
+    <name>Orchestrator</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <nodefilters>
+      <filter>name: win1032 name: rd-datacenter-1</filter>
+    </nodefilters>
+    <nodesSelectedByDefault>true</nodesSelectedByDefault>
+    <orchestrator>
+      <configuration>
+        <count>2</count>
+      </configuration>
+      <type>subset</type>
+    </orchestrator>
+    <plugins />
+    <schedule>
+      <month month='*' />
+      <time hour='02' minute='30' seconds='0' />
+      <weekday day='*' />
+      <year year='*' />
+    </schedule>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <exec>whoami</exec>
+      </command>
+    </sequence>
+    <uuid>86adcc40-cf21-4904-be21-f7919d2c5a80</uuid>
+  </job>
+</joblist>
