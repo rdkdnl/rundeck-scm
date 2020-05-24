@@ -1,0 +1,26 @@
+<joblist>
+  <job>
+    <defaultTab>output</defaultTab>
+    <description></description>
+    <executionEnabled>true</executionEnabled>
+    <loglevel>DEBUG</loglevel>
+    <name>Ansible</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <plugins />
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <step-plugin type='com.batix.rundeck.plugins.AnsiblePlaybookWorkflowStep'>
+          <configuration>
+            <entry key='ansible-base-dir-path' value='/etc/ansible' />
+            <entry key='ansible-become' value='false' />
+            <entry key='ansible-disable-limit' value='false' />
+            <entry key='ansible-playbook' value='/etc/ansible/ansible-playbook.yml' />
+            <entry key='ansible-ssh-passphrase-option' value='option.password' />
+            <entry key='ansible-ssh-use-agent' value='false' />
+          </configuration>
+        </step-plugin>
+      </command>
+    </sequence>
+  </job>
+</joblist>

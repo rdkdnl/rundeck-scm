@@ -1,0 +1,17 @@
+<joblist>
+  <job>
+    <defaultTab>nodes</defaultTab>
+    <description>rundeck's PID right now</description>
+    <executionEnabled>true</executionEnabled>
+    <loglevel>INFO</loglevel>
+    <name>rundeckPID</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <plugins />
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <exec>echo "Rundeck PID: $(cat /var/run/rundeckd.pid)"</exec>
+      </command>
+    </sequence>
+  </job>
+</joblist>
